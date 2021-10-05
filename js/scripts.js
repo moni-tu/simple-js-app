@@ -1,10 +1,16 @@
-alert('Hello World');
 
-let favouriteFood = 'Lasagna';
-document.write(favouriteFood);
 
-let name='John';
-document.write('my name is '+name+' and I am ready to start');
+let annesAge = 27;
+let anne = {
+    name:'Anne',
+    age: annesAge,
+    child: {
+        name:'Joe',
+        age:2
+    }
+};
+
+console.log(anne.name);
 
 
 
