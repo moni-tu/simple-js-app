@@ -1,31 +1,11 @@
-
-
-let annesAge = 27;
-let anne = {
-    name:'Anne',
-    age: annesAge,
-    child: {
-        name:'Joe',
-        age:2
-    }
-};
-
-console.log(anne.name);
-
-
-let currentUserName = 'Sam';
-
-let userAges = {
-    anne=27,
-    sam=112,
-    megan=97
-};
-
-userAges[currentUserName]=113;
-console.log(userAges[currentUserName]);
-
-let myVariable = 'Hello World';
-console.log(typeof myVariable);
+let pokemonList
+pokemonList = [
+    {name:'bulbasaur', height:0.7, type: ['grass','poison']},
+    {name:'charmender', height:0.6, type: ['fire']},
+    {name:'squirtle', height:0.5, type: ['water']},
+    {name:'jigglipuff', height:0.5, type: ['fairy', 'normal']},
+    {name:'gastly', height:1.3, type: ['ghost','poison']}
+]
 
 
 
