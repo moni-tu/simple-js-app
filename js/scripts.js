@@ -6,6 +6,9 @@ let pokemonList = [
     {name:'gastly', height:1.3, type: ['ghost','poison']}
 ]
 
+for (let i=0; i<pokemonList.length; i++) {
+    document.write(i);
+}
 
 
  
