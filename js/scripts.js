@@ -6,6 +6,10 @@ let pokemonList = [
     {name:'Gastly', height:1.3, type: ['ghost','poison']}
 ]
 
+pokemonList.forEach(function(pokemon) {
+    console.log(pokemon.name + ', height: ' + pokemon.height + ', type: ' + pokemon.type);
+});
+
 for (let i=0; i<pokemonList.length; i++) {
     if (pokemonList[i].height>1.0){
         document.write(pokemonList[i].name + ' (height ' + pokemonList[i].height + ') Your Pokemon is big!');
@@ -19,6 +23,3 @@ for (let i=0; i<pokemonList.length; i++) {
     }
      
 }
-
-
- 
