@@ -15,13 +15,14 @@ let pokemonRepository = (function() {
             pokemonList.push(pokemon);
         }
     };
+
 })();
 
-console.log(pokemonRepository.getAll());
+document.write(pokemonRepository.getAll());
 pokemonRepository.add({name: 'Psyduck', height: 0.8});
 console.log(pokemonRepository.getAll());
 
-pokemonList.forEach(function(pokemon) {
+pokemonRepository.forEach(function(pokemon) {
     console.log(pokemon.name + ', height: ' + pokemon.height + ', type: ' + pokemon.type);
 });
 
