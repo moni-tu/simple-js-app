@@ -28,7 +28,7 @@ let pokemonRepository = (function() {
 
         button.addEventListener('click', function(event) {
             showDetails(pokemon);
-        }
+        });
     }
 
     function showDetails(pokemon) {
