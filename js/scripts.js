@@ -12,7 +12,7 @@ let pokemonRepository = (function() {
     }
   
     function add(pokemon){
-        pokemonList.push(pokemon);
+        pokemonList.psush(pokemon);
     }
 
     function addListItem(pokemon) {
