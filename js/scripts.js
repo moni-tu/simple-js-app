@@ -25,6 +25,14 @@ let pokemonRepository = (function() {
         //so to make it present on the page. = CSSclass.appendChild(button)
         listItem.appendChild(button);
         unorderedList.appendChild(listItem);
+
+        button.addEventListener('click', function(event) {
+            showDetails(pokemon);
+        }
+    }
+
+    function showDetails(pokemon) {
+        console.log(pokemon.name);
     }
 
     return {
