@@ -37,6 +37,7 @@ let pokemonRepository = (function() {
                     detailsUrl: item.url
                 };
                 add(pokemon);
+                console.log(pokemon);
             });
         }).catch(function(e){
             console.error(e);
@@ -64,13 +65,13 @@ let pokemonRepository = (function() {
     }
 
     return {
-        getAll,
-        add,
-        addListItem,   
-        loadlist,
-        loadDetails,
-        showDetails
-        
+        getAll: getAll,
+        add: add,
+        addListItem: addListItem,   
+        loadlist: loadlist,
+        loadDetails: loadDetails,
+        showDetails: showDetails
+
     };
 
 })();
