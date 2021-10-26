@@ -7,6 +7,8 @@ let pokemonRepository = (function() {
     {name:'Gastly', height:1.3, type: ['ghost','poison']}
     ];
 
+    let apiUrl= "https://pokeapi.co/api/v2/pokemon/?limit=150";
+
     function getAll() {
         return pokemonList;
     }
@@ -35,14 +37,36 @@ let pokemonRepository = (function() {
         console.log(pokemon.name);
     }
 
+    function loadlist() {
+        return fetch(apiUrl).then(function(response){
+            return response.json();
+        }).then(function(json){
+            json.results.foreach(function(item){
+                let pokemon = {
+                    name: item.name,
+                    detailsUrl: item.url
+                };
+                add(pokemon);
+            });
+        }).catch(function(e){
+            console.error(e);
+        })
+    }
+
     return {
-        getAll: getAll,
-        add: add,
-        addListItem: addListItem,   
+        getAll,
+        add,
+        addListItem,   
+        loadlist,
     };
 
-
 })();
+
+pokemonRepository.loadlist().then(function(){
+    pokemonRepository.getAll().forEach(function(pokemon){
+        pokemonRepository.addListItem(pokemon);
+    });
+});
 
 pokemonRepository.getAll().forEach(function(pokemon) {
     pokemonRepository.addListItem(pokemon);
