@@ -59,9 +59,59 @@ let pokemonRepository = (function () {
     });
   }
 
+  // function that shows the details of a pokemon in a modal
+  function showModal(title, text) {
+    modalContainer.innerHTML = '';
+    let modal = document.createElement('div');
+    modal.classList.add('modal');
+
+    let closeButtonElement = document.createElement('button');
+    closeButtonElement.classList.add('modal-close');
+    closeButtonElement.innerText = 'Close';
+    closeButtonElement.addEventListener('click', hideModal);
+
+    let titleElement = document.createElement('h1');
+    titleElement.innerText = title;
+
+    let contentElement = document.createElement('p');
+    contentElement.innerText = text;
+
+    modal.appendChild(closeButtonElement);
+    modal.appendChild(titleElement);
+    modal.appendChild(contentElement);
+    modalContainer.appendChild(modal);
+
+    modalContainer.classList.add('is-visible');
+  }
+
+  function hideModal() {
+    modalContainer.classList.remove('is-visible');
+  }
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
+      hideModal();  
+    }
+  });
+
+  modalContainer.addEventListener('click', (e) => {
+    // Since this is also triggered when clicking INSIDE the modal
+    // We only want to close if the user clicks directly on the overlay
+    let target = e.target;
+    if (target === modalContainer) {
+      hideModal();
+    }
+  });
+
+  document.querySelector('#show-modal').addEventListener('click', () => {
+    showModal('Modal title', 'This is the modal content!');
+  });
+    
+
+  // asyncronic function that shows the modal with the pokemon details when they are loaded by function loadDetails
   function showDetails(item) {
     pokemonRepository.loadDetails(item).then(function () {
-      console.log(item);
+      showModal();
     });
   }
 
@@ -71,8 +121,10 @@ let pokemonRepository = (function () {
     addListItem: addListItem,
     loadList: loadList,
     loadDetails: loadDetails,
-    showDetails: showDetails
+    showDetails: showDetails,
+    showModal: showModal,
   };
+
 })();
 
 
@@ -80,12 +132,4 @@ pokemonRepository.loadList().then(function () {
   pokemonRepository.getAll().forEach(function (pokemon) {
     pokemonRepository.addListItem(pokemon);
   });
-});
-
-
-  
-
-
-
-
-
+})
