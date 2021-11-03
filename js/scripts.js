@@ -113,9 +113,11 @@ let pokemonRepository = (function () {
     modalContainer.classList.remove('is-visible');
   }
 
+  /*
   document.querySelector('#show-modal').addEventListener('click', () => {
     showModal('Modal title', 'This is the modal content!');
   });
+  */
     
 
   // asyncronic function that shows the modal with the pokemon details when they are loaded by function loadDetails
