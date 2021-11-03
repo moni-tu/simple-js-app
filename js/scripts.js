@@ -60,7 +60,8 @@ let pokemonRepository = (function () {
   }
 
   // function that shows the details of a pokemon in a modal
-  function showModal(title, text) {
+  function showModal(item) {
+    let modalContainer = document.querySelector('#modal-container');
     modalContainer.innerHTML = '';
     let modal = document.createElement('div');
     modal.classList.add('modal');
@@ -74,22 +75,21 @@ let pokemonRepository = (function () {
     titleElement.innerText = item.name;
 
     let contentElement = document.createElement('p');
-    contentElement.innerText = details.height; details.sprites.front_default ;
-
-    let container = document.querySelector('#image-container');
+    contentElement.innerText = 'height: ' + item.height +', weight: '+ item.weight;
 
     // Create an <img> element
     let myImage = document.createElement('img');
 
     // setting `src` property to set the actual element's `src` attribute
     // this also works on <img> elements selected by querySelector() method, it is not specific for <img> elements created with createElement() methods
-    myImage.src = 'https://picsum.photos/300/300';
+    //myImage.src = 'https://picsum.photos/300/300';
+	  myImage.setAttribute("src", item.imageUrl);
 
     modal.appendChild(closeButtonElement);
     modal.appendChild(titleElement);
     modal.appendChild(contentElement);
     modalContainer.appendChild(modal);
-    modalContainer.appendChild(myImage);
+    modal.appendChild(myImage);
 
     modalContainer.classList.add('is-visible');
   }
@@ -120,7 +120,7 @@ let pokemonRepository = (function () {
 
   // asyncronic function that shows the modal with the pokemon details when they are loaded by function loadDetails
   function showDetails(item) {
-    pokemonRepository.loadDetails(item).then(function () {
+    loadDetails(item).then(function () {
       showModal();
     });
   }
