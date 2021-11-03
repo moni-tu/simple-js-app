@@ -71,10 +71,10 @@ let pokemonRepository = (function () {
     closeButtonElement.addEventListener('click', hideModal);
 
     let titleElement = document.createElement('h1');
-    titleElement.innerText = title;
+    titleElement.innerText = item.name;
 
     let contentElement = document.createElement('p');
-    contentElement.innerText = text;
+    contentElement.innerText = details.height; details.sprites.front_default ;
 
     modal.appendChild(closeButtonElement);
     modal.appendChild(titleElement);
