@@ -127,6 +127,10 @@ let pokemonRepository = (function () {
     });
   }
 
+  function getAll() {
+      return pokemonList;
+  }
+
   return {
     add: add,
     getAll: getAll,
@@ -135,6 +139,7 @@ let pokemonRepository = (function () {
     loadDetails: loadDetails,
     showDetails: showDetails,
     showModal: showModal,
+    hideModal: hideModal
   };
 
 })();
