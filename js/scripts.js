@@ -70,12 +70,6 @@ let pokemonRepository = (function () {
     closeButtonElement.classList.add('modal-close');
     closeButtonElement.innerText = 'Close';
     closeButtonElement.addEventListener('click', hideModal);
-
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
-        hideModal();  
-      }
-    });
     
     modalContainer.addEventListener('click', (e) => {
       // Since this is also triggered when clicking INSIDE the modal
@@ -114,6 +108,12 @@ let pokemonRepository = (function () {
     modalContainer.classList.remove('is-visible');
   }
 
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
+      hideModal();  
+    }
+  });
+  
   /*
   document.querySelector('#show-modal').addEventListener('click', () => {
     showModal('Modal title', 'This is the modal content!');
