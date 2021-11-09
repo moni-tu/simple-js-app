@@ -18,6 +18,8 @@
 
 .page-container {
   margin-top: 60px; 
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 .pokemon-list {
