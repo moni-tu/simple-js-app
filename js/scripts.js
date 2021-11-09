@@ -22,6 +22,7 @@ let pokemonRepository = (function () {
     listpokemon.classList.add(group-list-item);
     button.innerText = pokemon.name;
     button.classList.add("button-class");
+    button.classList.add("btn btn-primary");
     listpokemon.appendChild(button);
     pokemonList.appendChild(listpokemon);
     button.addEventListener("click", function(event) {
@@ -69,6 +70,7 @@ let pokemonRepository = (function () {
 
     let closeButtonElement = document.createElement('button');
     closeButtonElement.classList.add('modal-close');
+    closeButtonElement.classList.add('btn btn-secondary');
     closeButtonElement.innerText = 'Close';
     closeButtonElement.addEventListener('click', hideModal);
     
