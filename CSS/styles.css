@@ -19,6 +19,11 @@
 .nav {
   margin-bottom: 60px;
 }
+
+.navbar-collapse {
+  display: inline-block;
+  justify-content: right;
+}
 .pokemon-list {
     background-color: lightgray;
     border: 2px;
