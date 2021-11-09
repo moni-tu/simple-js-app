@@ -16,6 +16,10 @@
     padding-left: 20px;
 }
 
+.page-container {
+  margin-top: 60px; 
+}
+
 .pokemon-list {
     background-color: blue;
     border: 2px;
