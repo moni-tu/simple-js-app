@@ -16,6 +16,9 @@
     padding-left: 20px;
 }
 
+.nav {
+  margin-bottom: 60px;
+}
 .pokemon-list {
     background-color: lightskyblue;
     border: 2px;
