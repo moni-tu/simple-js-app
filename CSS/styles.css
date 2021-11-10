@@ -25,11 +25,15 @@
   justify-content: right;
 }
 .pokemon-list {
-    background-color: lightgray;
+    background-color: blanchedalmond;
     border: 2px;
     border-color: black;
     margin-top: 60px;
-    border-radius: 0;
+    text-align: center;
+}
+
+.button-class {
+  border-radius: 0;
 }
 
 
