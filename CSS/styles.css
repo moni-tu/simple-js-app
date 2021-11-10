@@ -25,7 +25,12 @@
   justify-content: right;
 }
 .pokemon-list {
-    background-image:url(/img/pokemon-wallpaper.jpg);
+    background-image:url(/img/pokemon-background.png);
+    background-repeat: no-repeat;
+    /*The background-attachment property sets whether a 
+    background image scrolls with the rest of the page, or is fixed.*/
+    background-attachment: fixed;
+    background-position: center;
     border: 2px;
     border-color: black;
     margin-top: 60px;
