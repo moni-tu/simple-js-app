@@ -34,6 +34,8 @@
 
 .button-class {
   border-radius: 0;
+  height: 200px;
+  width: 200px;
 }
 
 
