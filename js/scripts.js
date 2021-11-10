@@ -25,8 +25,8 @@ let pokemonRepository = (function () {
     // the following two lines maanage data-* attributes is by using dataset.
     // overall the button in HTML would look like: 
     //<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Pokemon name </button>
-    button.dataset.toggle("modal");
-    button.dataset.target("#exampleModal");
+    button.setAttribute("data-toggle", "modal");
+    button.setAttribute("data-target", "#pokemonModal");
     listpokemon.classList.add("group-list-item");
     listpokemon.appendChild(button);
     pokemonList.appendChild(listpokemon);
