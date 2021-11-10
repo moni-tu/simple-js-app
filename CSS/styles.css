@@ -25,7 +25,7 @@
   justify-content: right;
 }
 .pokemon-list {
-    background-color: blanchedalmond;
+    background-image:url(/img/pokemon-wallpaper.jpg);
     border: 2px;
     border-color: black;
     margin-top: 60px;
