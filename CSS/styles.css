@@ -25,7 +25,7 @@
   justify-content: right;
 }
 .pokemon-list {
-    background-image:url(/img/pokemon-background.png);
+    background-image:url('/img/pokemon-background.png');
     background-repeat: no-repeat;
     /*The background-attachment property sets whether a 
     background image scrolls with the rest of the page, or is fixed.*/
