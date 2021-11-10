@@ -22,6 +22,11 @@ let pokemonRepository = (function () {
     button.innerText = pokemon.name;
     button.classList.add("button-class");
     button.classList.add("btn", "btn-primary", "btn-lg");
+    // the following two lines maanage data-* attributes is by using dataset.
+    // overall the button in HTML would look like: 
+    //<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Pokemon name </button>
+    button.dataset.toggle("modal");
+    button.dataset.target("#exampleModal");
     listpokemon.classList.add("group-list-item");
     listpokemon.appendChild(button);
     pokemonList.appendChild(listpokemon);
@@ -63,6 +68,7 @@ let pokemonRepository = (function () {
 
   // function that shows the details of a pokemon in a modal
   function showModal(item) {
+
     let modalContainer = document.querySelector('#modal-container');
     modalContainer.innerHTML = '';
     let modal = document.createElement('div');
