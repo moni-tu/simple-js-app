@@ -26,7 +26,7 @@ let pokemonRepository = (function () {
     // overall the button in HTML would look like: 
     //<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Pokemon name </button>
     button.setAttribute("data-toggle", "modal");
-    button.setAttribute("data-target", "#pokemonModal");
+    button.setAttribute("data-target", "#exampleModal");
     listpokemon.classList.add("group-list-item");
     listpokemon.appendChild(button);
     pokemonList.appendChild(listpokemon);
