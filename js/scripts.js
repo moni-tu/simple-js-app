@@ -66,13 +66,32 @@ let pokemonRepository = (function () {
     });
   }
 
-  // function that shows the details of a pokemon in a modal
+  // details of a pokemon in a modal
   function showModal(item) {
     let modalBody = $(".modal-body");
     let modalTitle = $(".modal-title");
     let modalHeader = $(".modal-header");
-
     
+    // empty modal title and body because if you load many pokemons in a row,
+    // these info can overlap. Explicitly re-set them.
+    modalTitle.empty();
+    modalBody.empty();
+
+    //create element for name in modal content
+    let nameElement = $("<h1>" + item.name + "</h1>");
+    let imageUrl = $("<img class='modal-img' style='width: 50%'>");
+    imageUrl.attr("src", item.imageUrl);
+    let heightElement = $("<p>" + "height: " + item.height + "</p>");
+    let weightElement = $("<p>" + "weight: " + item.weight + "</p>");
+    let typesElement = $("<p>" + "types: " + item.types + "</p>");
+    let abilitiesElement = $("<p>" + "abilities: " + item.abilities + "</p>");
+    
+    modalTitle.append(nameElement);
+    modalBody.append(imageUrl);
+    modalBody.append(heightElement);
+    modalBody.append(weightElement);
+    modalBody.append(typesElement);
+    modalBody.append(abilitiesElement);
     
   }
 
