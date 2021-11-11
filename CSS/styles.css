@@ -31,7 +31,7 @@
   background image scrolls with the rest of the page, or is fixed.*/
   background-attachment: fixed;
   background-position: center;
-  border: 2px;
+  border: 5px;
   border-color: black;
   margin-top: 60px;
   text-align: center;
@@ -42,6 +42,7 @@
   height: 50px;
   width: 200px;
   border-color: black;
+  border: 5px;
 }
 
 
