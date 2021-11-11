@@ -27,13 +27,15 @@ let pokemonRepository = (function () {
     //<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Pokemon name </button>
     button.setAttribute("data-target", "#exampleModal");
     button.setAttribute("data-toggle", "modal");
-    listpokemon.appendChild(button);
-    pokemonList.appendChild(listpokemon);
     button.addEventListener("click", function(event) {
       showDetails(pokemon);
     });
-  }
 
+    listpokemon.appendChild(button);
+    pokemonList.appendChild(listpokemon);
+  }
+  
+  // Load list of pokemon without details
   function loadList() {
     return fetch(apiUrl).then(function (response) {
       return response.json();
