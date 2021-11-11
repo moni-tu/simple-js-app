@@ -76,7 +76,14 @@ let pokemonRepository = (function () {
     });
   }
 
-  // details of a pokemon in a modal
+  // Show pokemon details
+  function showDetails(item) {
+    loadDetails(item).then(function () {
+      showModal(item);
+    });
+  }
+
+  // Show modal
   function showModal(item) {
     let modalBody = document.querySelector(".modal-body");
     let modalTitle = document.querySelector(".modal-title");
@@ -108,13 +115,6 @@ let pokemonRepository = (function () {
     modalBody.append(typesElement);
     modalBody.append(abilitiesElement);
     
-  }
-
-  // asyncronic function that shows the modal with the pokemon details when they are loaded by function loadDetails
-  function showDetails(item) {
-    loadDetails(item).then(function () {
-      showModal(item);
-    });
   }
 
   function getAll() {
