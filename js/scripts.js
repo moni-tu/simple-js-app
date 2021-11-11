@@ -60,13 +60,14 @@ let pokemonRepository = (function () {
       // Now we add the details to the item
       item.imageUrlFront = details.sprites.front_default;
       item.imageUrlBack = details.sprites.back_default;
+      item.weight = details.weight;
       item.height = details.height;
       item.types = [];
-        for (var i = 0; i < details.types.lenght; i++) {
+        for (var i = 0; i < details.types.length; i++) {
           item.types.push(details.types[i].type.name);
         }
       item.abilities = [];
-        for (var i = 0; i < details.abilities.lenght; i++) {
+        for (var i = 0; i < details.abilities.length; i++) {
           item.abilities.push(details.abilities[i].ability.name);
         }
     }).catch(function (e) {
