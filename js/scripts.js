@@ -100,6 +100,13 @@ let pokemonRepository = (function () {
     
   }
 
+  // asyncronic function that shows the modal with the pokemon details when they are loaded by function loadDetails
+  function showDetails(item) {
+    loadDetails(item).then(function () {
+      showModal(item);
+    });
+  }
+
   function getAll() {
       return pokemonList;
   }
@@ -112,7 +119,6 @@ let pokemonRepository = (function () {
     loadDetails: loadDetails,
     showDetails: showDetails,
     showModal: showModal,
-    hideModal: hideModal
   };
 
 })();
