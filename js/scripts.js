@@ -89,27 +89,23 @@ let pokemonRepository = (function () {
     let modalTitle = document.querySelector(".modal-title");
     let modalHeader = document.querySelector(".modal-header");
     
-    // empty modal title and body because if you load many pokemons in a row,
-    // these info can overlap. Explicitly re-set them.
+    // empty modal title and body 
     modalTitle.innerHTML = '';
     modalBody.innerHTML = '';
 
-    //create element for name in modal content
-    let nameElement = document.createElement("h5");
-    nameElement.innerHTML = pokemon.name;
-    let pokemonPicture = document.createElement("img");
-    pokemonPicture.src = item.imageUrl; 
-    let heightElement = document.createElement("p"); 
-    heightElement.innerHTML = 'Height: ' + item.height;
-    let weightElement = document.createElement("p"); 
-    weightElement.innerHTML = 'Weight: ' + item.weight;
-    let typesElement = document.createElement("p");
-    typesElement.innerHTML = 'Types: ' + item.types; 
-    let abilitiesElement = document.createElement("p"); 
-    abilitiesElement.innerHTML = 'Abilities: ' + item.abilities;
+    let nameElement = $('<h1>' + item.name + '</h1>');
+    let imageElementFront = $('<img class="modal-img" style="width:50%">');
+    imageElementFront.attr('src', item.imageUrlFront);
+    let imageElementBack = $('<img class="modal-img" style="width:50%">');
+    imageElementBack.attr('src', item.imageUrlBack);
+    let heightElement = $("<p>" + "height : " + item.height + "</p>");
+    let weightElement = $("<p>" + "weight : " + item.weight + "</p>");
+    let typesElement = $("<p>" + "types : " + item.types + "</p>");
+    let abilitiesElement = $("<p>" + "abilities : " + item.abilities + "</p>");
     
     modalTitle.append(nameElement);
-    modalBody.append(imageUrl);
+    modalBody.append(imageElementFront);
+    modalBody.append(imageElementBack);
     modalBody.append(heightElement);
     modalBody.append(weightElement);
     modalBody.append(typesElement);
