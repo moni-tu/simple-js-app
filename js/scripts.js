@@ -1,6 +1,8 @@
 let pokemonRepository = (function () {
   let pokemonList = [];
+  //API link
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+
 
   function add(pokemon) {
     if (
@@ -12,9 +14,7 @@ let pokemonRepository = (function () {
       console.log("pokemon is not correct");
     }
   }
-  function getAll() {
-    return pokemonList;
-  }
+  
   function addListItem(pokemon) {
     let pokemonList = document.querySelector(".pokemon-list");
     let listpokemon = document.createElement("li");
