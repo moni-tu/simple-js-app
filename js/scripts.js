@@ -63,7 +63,14 @@ let pokemonRepository = (function () {
       item.imageUrlFront = details.sprites.front_default;
       item.imageUrlBack = details.sprites.back_default;
       item.height = details.height;
-      item.types = details.types;
+      item.types = [];
+        for (var i = 0; i < details.types.lenght; i++) {
+          item.types.push(details.types[i].type.name);
+        }
+      item.abilities = [];
+        for (var i = 0; i < details.abilities.lenght; i++) {
+          item.abilities.push(details.abilities[i].ability.name);
+        }
     }).catch(function (e) {
       console.error(e);
     });
