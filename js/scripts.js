@@ -16,18 +16,17 @@ let pokemonRepository = (function () {
   }
   
   function addListItem(pokemon) {
-    let pokemonList = document.querySelector(".pokemon-list");
+    let pokemonList = document.querySelector(".list-group");
     let listpokemon = document.createElement("li");
+    listpokemon.classList.add("list-group-item");
     let button = document.createElement("button");
     button.innerText = pokemon.name;
-    button.classList.add("button-class");
-    button.classList.add("btn", "btn-primary", "btn-lg");
+    button.classList.add("button-class", "btn", "btn-primary", "btn-lg");
     // the following two lines maanage data-* attributes is by using dataset.
     // overall the button in HTML would look like: 
     //<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Pokemon name </button>
-    button.setAttribute("data-toggle", "modal");
     button.setAttribute("data-target", "#exampleModal");
-    listpokemon.classList.add("group-list-item");
+    button.setAttribute("data-toggle", "modal");
     listpokemon.appendChild(button);
     pokemonList.appendChild(listpokemon);
     button.addEventListener("click", function(event) {
