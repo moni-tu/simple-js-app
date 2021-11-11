@@ -1,19 +1,19 @@
 .poke-button {
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .body-header {
-    color: blue;
-    padding-left: 20px;
+  color: blue;
+  padding-left: 20px;
 }
 
 .nav {
@@ -25,16 +25,16 @@
   justify-content: right;
 }
 .pokemon-list {
-    background-image:url('../img/squirtle-wallpaper.png');
-    background-repeat: no-repeat;
-    /*The background-attachment property sets whether a 
-    background image scrolls with the rest of the page, or is fixed.*/
-    background-attachment: fixed;
-    background-position: center;
-    border: 2px;
-    border-color: black;
-    margin-top: 60px;
-    text-align: center;
+  background-image:url('../img/squirtle-wallpaper.png');
+  background-repeat: no-repeat;
+  /*The background-attachment property sets whether a 
+  background image scrolls with the rest of the page, or is fixed.*/
+  background-attachment: fixed;
+  background-position: center;
+  border: 2px;
+  border-color: black;
+  margin-top: 60px;
+  text-align: center;
 }
 
 .button-class {
