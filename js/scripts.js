@@ -90,10 +90,10 @@ let pokemonRepository = (function () {
     
     // empty modal title and body 
     $('.modal-title').on('hidden.bs.modal', function(e){ 
-        $(this).removeData();
+      $(this).find('form')[0].reset();
     });
     $('.modal-body').on('hidden.bs.modal', function(e){ 
-      $(this).removeData();
+      $(this).find('form')[0].reset();
   });
 
     modalTitle.innerHTML = '';
