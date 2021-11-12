@@ -89,15 +89,8 @@ let pokemonRepository = (function () {
     let modalHeader = $('.modal-header');
     
     // empty modal title and body 
-    $('.modal-title').on('hidden.bs.modal', function(e){ 
-      $(this).find('form')[0].reset();
-    });
-    $('.modal-body').on('hidden.bs.modal', function(e){ 
-      $(this).find('form')[0].reset();
-  });
-
-    modalTitle.innerHTML = '';
-    modalBody.innerHTML = '';
+    modalBody.empty();
+    modalTitle.empty();
 
     let nameElement = $('<h1>' + item.name + '</h1>');
     let imageElementFront = $('<img class="modal-img" style="width:50%">');
