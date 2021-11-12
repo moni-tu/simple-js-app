@@ -89,6 +89,13 @@ let pokemonRepository = (function () {
     let modalHeader = $('.modal-header');
     
     // empty modal title and body 
+    $('.modal-title').on('hidden.bs.modal', function(e){ 
+        $(this).removeData();
+    });
+    $('.modal-body').on('hidden.bs.modal', function(e){ 
+      $(this).removeData();
+  });
+
     modalTitle.innerHTML = '';
     modalBody.innerHTML = '';
 
