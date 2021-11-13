@@ -5,28 +5,28 @@ let pokemonRepository = (function () {
 
   function add(pokemon) {
     if (
-      typeof pokemon === "object" &&
-      "name" in pokemon
+      typeof pokemon === 'object' &&
+      'name' in pokemon
     ) {
       pokemonList.push(pokemon);
     } else {
-      console.log("pokemon is not correct");
+      console.log('pokemon is not correct');
     }
   }
   
   function addListItem(pokemon){
-    let pokemonList = document.querySelector(".list-group");
-    let listpokemon = document.createElement("li");
-    listpokemon.classList.add("list-group-item");
-    let button = document.createElement("button");
+    let pokemonList = document.querySelector('.list-group');
+    let listpokemon = document.createElement('li');
+    listpokemon.classList.add('list-group-item');
+    let button = document.createElement('button');
     button.innerText = pokemon.name;
-    button.classList.add("button-class", "btn", "btn-primary", "btn-lg");
+    button.classList.add('button-class', 'btn', 'btn-primary', 'btn-lg');
     // the following two lines maanage data-* attributes is by using dataset.
     // overall the button in HTML would look like: 
     //<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Pokemon name </button>
-    button.setAttribute("data-target", "#exampleModal");
-    button.setAttribute("data-toggle", "modal");
-    button.addEventListener("click", function(event) {
+    button.setAttribute('data-target', '#exampleModal');
+    button.setAttribute('data-toggle', 'modal');
+    button.addEventListener('click', function() {
       showDetails(pokemon);
     });
 
@@ -67,6 +67,7 @@ let pokemonRepository = (function () {
           item.types.push(details.types[i].type.name);
         }
       item.abilities = [];
+        // eslint-disable-next-line no-redeclare
         for (var i = 0; i < details.abilities.length; i++) {
           item.abilities.push(details.abilities[i].ability.name);
         }
@@ -86,7 +87,6 @@ let pokemonRepository = (function () {
   function showModal(item) {
     let modalBody = $('.modal-body');
     let modalTitle = $('.modal-title');
-    let modalHeader = $('.modal-header');
     
     // empty modal title and body 
     modalBody.empty();
@@ -97,10 +97,10 @@ let pokemonRepository = (function () {
     imageElementFront.attr('src', item.imageUrlFront);
     let imageElementBack = $('<img class="modal-img" style="width:50%">');
     imageElementBack.attr('src', item.imageUrlBack);
-    let heightElement = $("<p>" + "height : " + item.height + "</p>");
-    let weightElement = $("<p>" + "weight : " + item.weight + "</p>");
-    let typesElement = $("<p>" + "types : " + item.types + "</p>");
-    let abilitiesElement = $("<p>" + "abilities : " + item.abilities + "</p>");
+    let heightElement = $('<p>' + 'height : ' + item.height + '</p>');
+    let weightElement = $('<p>' + 'weight : ' + item.weight + '</p>');
+    let typesElement = $('<p>' + 'types : ' + item.types + '</p>');
+    let abilitiesElement = $('<p>' + 'abilities : ' + item.abilities + '</p>');
     
     modalTitle.append(nameElement);
     modalBody.append(imageElementFront);
