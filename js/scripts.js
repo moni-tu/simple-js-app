@@ -111,6 +111,19 @@ let pokemonRepository = (function () {
     modalBody.append(abilitiesElement);
   }
 
+  // search pokemon name in nav bar
+  let searchPokemon = document.querySelector('#searchbar');
+  searchPokemon.addEventListener('input', () =>{
+      let value = searchPokemon.value.toLowerCase();
+      let pokemonList = document.querySelectorAll('li');
+      pokemonList.forEach((pokemon) =>{
+          if(pokemon.innerText.toLowerCase().includes(value))
+              pokemon.style.display = 'block';
+          else
+              pokemon.style.display = 'none';
+      })
+  });
+
   function getAll() {
       return pokemonList;
   }
