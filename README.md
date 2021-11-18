@@ -30,7 +30,7 @@ TECHNICAL REQUIREMENTS
 ● The JavaScript code is also manually formatted.
 ● The app uses at least a complex UI pattern, a modal, for details and touch interactions.
 ● The app allows searching for Pokémons.
-● The app is deployed to GitHub Pages.
+● The app is deployed to GitHub Pages https://moni-tu.github.io/simple-js-app/.
 ● The app works in Chrome, Firefox, Safari, Edge, and Internet Explorer 11.
 
 
