@@ -32,6 +32,18 @@
   width: 200px;
 }
 
+#btn-to-top {
+	position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: var(--header-color);
+    border: none;
+    border-radius: 50%;
+}
+
+.bi-caret-up-fill {
+	color: #fff;
+}
 
 #modal-container {
   position: fixed;

@@ -34,6 +34,13 @@ let pokemonRepository = (function () {
     pokemonList.appendChild(listpokemon);
   }
   
+  // Scroll up button
+  let scrollButton = document.getElementById('btn-to-top');
+  scrollButton.addEventListener('click', toTop);
+  function toTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
   // Load list of pokemons without details
   function loadList() {
     return fetch(apiUrl).then(function (response) {
