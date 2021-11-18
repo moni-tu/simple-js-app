@@ -7,7 +7,7 @@ TOOLS
 ● JavaScript
 
 GETTING STARTED
-The easiest way to start is to close the repository.
+The easiest way to start is to clone the repository.
 https://github.com/moni-tu/simple-js-app.git
 
 USE GOALS
@@ -15,7 +15,7 @@ In the Pokedex app, the user can view a list of Pokémons and see more details o
 
 KEY FEATURES
 
-● Load data from an external source (Pokémon API)
+● Load data from an external source (Pokémon API https://pokeapi.co/api/v2/pokemon/?limit=150)
 ● View a list of 150 Pokémons.
 ● By clicking on a list item, view the following Pokemon details: front and back images, height, weight, types and abilities.
 
