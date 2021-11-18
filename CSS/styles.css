@@ -14,9 +14,14 @@
   background image scrolls with the rest of the page, or is fixed.*/
   background-attachment: fixed;
   background-position: center;
-  border: 5px;
   margin-top: 60px;
-  text-align: center;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
 }
 
 .button-class {
