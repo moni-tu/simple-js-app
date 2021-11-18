@@ -38,7 +38,7 @@
 }
 
 #btn-to-top {
-	position: fixed;
+  position: absolute;
   bottom: 25px;
   right: 25px;
   background-color: var(--header-color);
