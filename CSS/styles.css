@@ -24,6 +24,11 @@
   padding: 1px;
 }
 
+.list-group-item {
+  background-color: transparent;
+  border: none;
+}
+
 .button-class {
   border-radius: 0;
   border: 5px;
