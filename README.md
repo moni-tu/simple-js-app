@@ -1,12 +1,12 @@
 
 POKEDEX APP
 
-TOOLS
-● HTML
-● CSS
-● JavaScript
+## TOOLS
+- HTML
+- CSS
+- JavaScript
 
-GETTING STARTED
+### GETTING STARTED
 The easiest way to start is to clone the repository.
 https://github.com/moni-tu/simple-js-app.git
 
@@ -32,5 +32,4 @@ TECHNICAL REQUIREMENTS
 ● The app allows searching for Pokémons.
 ● The app is deployed to GitHub Pages https://moni-tu.github.io/simple-js-app/.
 ● The app works in Chrome, Firefox, Safari, Edge, and Internet Explorer 11.
-
 
