@@ -35,8 +35,8 @@
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  border-top: 3px solid var(--pokemon-yellow);
-  border-bottom: 3px solid var(--pokemon-yellow);
+  border-top: 3px solid yellow;
+  border-bottom: 3px solid yellow;
   overflow-x: hidden;
   overflow-y: hidden;
   padding: 10px;
