@@ -6,8 +6,7 @@
   display: inline-block;
   justify-content: right;
 }
-.list-group {
-  
+.pokemon-list {
   /* background-image:url('../img/squirtle-wallpaper.png');
   background-repeat: no-repeat;
   /*The background-attachment property sets whether a 
