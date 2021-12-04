@@ -19,7 +19,7 @@ let pokemonRepository = (function () {
     let listpokemon = document.createElement('li');
     listpokemon.classList.add('pokemon-list-item');
     let button = document.createElement('button');
-    button.innerText = pokemon.name;
+    button.innerText = pokemon.name, pokemon.id, pokemon.hp;
     button.classList.add('poke-button');
     // the following two lines maanage data-* attributes is by using dataset.
     // overall the button in HTML would look like: 
