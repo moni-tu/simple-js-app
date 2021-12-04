@@ -16,15 +16,15 @@
   background-position: center;
   margin-top: 60px;
   list-style-type: none;
+}
+
+.list-group-item {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 1px;
-}
-
-.list-group-item {
   background-color: transparent;
   border-top: 3px solid yellow;
   border-bottom: 3px solid yellow;
