@@ -25,13 +25,13 @@
 
 .list-group-item {
   width: 25%;
-  padding: 1px;
+  padding: 10px;
+  gap: 10px;
   background-color: transparent;
   border-top: 3px solid yellow;
   border-bottom: 3px solid yellow;
   overflow-x: hidden;
   overflow-y: hidden;
-  gap: 10px;
   background: #333;
   border-radius: 10px;
   color: #eee;
