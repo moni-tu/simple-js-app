@@ -26,7 +26,8 @@
 
 .list-group-item {
   background-color: transparent;
-  border: none;
+  border-top: 3px solid yellow;
+  border-bottom: 3px solid yellow;
 }
 
 .button-class {
