@@ -38,6 +38,11 @@
   color: #eee;
 }
 
+.list-group-item:hover {
+  transform: scale(1.035);
+  cursor: pointer;
+}
+
 .button-class {
   border-radius: 0;
   border: 5px;
