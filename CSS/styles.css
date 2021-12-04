@@ -40,7 +40,7 @@
   transition: 0.2s ease-in-out all;
 }
 
-.list-group-item:hover {
+.poke-button:hover {
   transform: scale(1.035);
   cursor: pointer;
 }
