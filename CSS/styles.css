@@ -24,6 +24,7 @@
 }
 
 .list-group-item {
+  width: 25%;
   padding: 1px;
   background-color: transparent;
   border-top: 3px solid yellow;
