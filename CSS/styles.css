@@ -20,7 +20,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .poke-button{
@@ -41,23 +41,6 @@
 .poke-button:hover {
   transform: scale(1.035);
   cursor: pointer;
-}
-
-.button-class {
-  border-radius: 0;
-  border: 5px;
-  border-color: black;
-  height: 50px;
-  width: 200px;
-}
-
-#btn-to-top {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background-color: var(--header-color);
-  border: none;
-  border-radius: 50%;
 }
 
 #modal-container {
