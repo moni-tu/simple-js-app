@@ -28,6 +28,14 @@
   background-color: transparent;
   border-top: 3px solid yellow;
   border-bottom: 3px solid yellow;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 10px;
+  background: #333;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  color: #eee;
 }
 
 .button-class {
