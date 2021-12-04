@@ -7,7 +7,11 @@
 
 ### GETTING STARTED
 The easiest way to start is to clone the repository.
-https://github.com/moni-tu/simple-js-app.git
+# clone the repository
+
+```
+git clone https://github.com/moni-tu/simple-js-app.git
+``` 
 
 USE GOALS
 In the Pokedex app, the user can view a list of Pokémons and see more details on demand.
@@ -29,5 +33,5 @@ In the Pokedex app, the user can view a list of Pokémons and see more details o
 - The JavaScript code is also manually formatted.
 - The app uses at least a complex UI pattern, a modal, for details and touch interactions.
 - The app allows searching for Pokémons.
-- The app is deployed to GitHub Pages https://moni-tu.github.io/simple-js-app/.
+- The app is deployed to GitHub Pages ### <a href="https://moni-tu.github.io/simple-js-app/">LIVE DEMO</a>.
 - The app works in Chrome, Firefox, Safari, Edge, and Internet Explorer 11.
