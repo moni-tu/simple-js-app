@@ -50,7 +50,10 @@ let pokemonRepository = (function () {
       json.results.forEach(function (item) {
         let pokemon = {
           name: item.name,
-          detailsUrl: item.url
+          detailsUrl: item.url,
+          height: item.url.height,
+          weight: item.url.weight,
+          image: item.url.sprites,
         };
         add(pokemon);
       });
@@ -88,6 +91,7 @@ let pokemonRepository = (function () {
   // Show pokemon details
   function showDetails(item) {
     loadDetails(item).then(function () {
+      console.log('item', item);
       showModal(item);
     });
   }
