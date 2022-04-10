@@ -20,7 +20,6 @@ let pokemonRepository = (function () {
     listpokemon.classList.add('pokemon-list-item');
     let button = document.createElement('button');
     button.innerText = pokemon.name;
-    button.innerHTML = '<img src= >';
     button.classList.add('poke-button');
     // the following two lines maanage data-* attributes is by using dataset.
     // overall the button in HTML would look like: 
@@ -69,7 +68,7 @@ let pokemonRepository = (function () {
       return response.json();
     }).then(function (details) {
       // Now we add the details to the item
-      console.log(details);
+      
       item.imageUrlFront = details.sprites.front_default;
       item.imageUrlBack = details.sprites.back_default;
       item.weight = details.weight;
