@@ -1,19 +1,23 @@
 # POKEDEX APP
 
 ## TOOLS
+
 - HTML
 - CSS
 - JavaScript
 
 ### GETTING STARTED
+
 The easiest way to start is to clone the repository.
+
 # clone the repository
 
 ```
 git clone https://github.com/moni-tu/simple-js-app.git
-``` 
+```
 
-USE GOALS
+## USE GOALS
+
 In the Pokedex app, the user can view a list of Pokémons and see more details on demand.
 
 ### KEY FEATURES
