@@ -39,3 +39,13 @@ In the Pokedex app, the user can view a list of Pokémons and see more details o
 - The app allows searching for Pokémons.
 - The app is deployed to GitHub Pages ### <a href="https://moni-tu.github.io/simple-js-app/">LIVE DEMO</a>.
 - The app works in Chrome, Firefox, Safari, Edge, and Internet Explorer 11.
+
+## APP PREVIEW
+
+### Pokedey Home Screen
+
+![Pokedex-homeScreen_screenshot](https://user-images.githubusercontent.com/91124224/169838255-2532e586-2699-484c-b3ad-329668989001.png)
+
+### Pokemon info modal
+
+![Pokedex_pokeinfoModal_screenshot](https://user-images.githubusercontent.com/91124224/169838274-336abf96-f07c-4393-97a6-7142fa43ec53.png)
